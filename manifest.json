@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "Listen2Yourself",
+    "description": "A tool for writing more thoughtful and empathetic YouTube comments.",
+    "version": "1.0.0",
+    "author": "Brian Nguyen and Eric DiMarzio",
+    
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_title": "Listen2Yourself"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+    "host_permissions": [
+        "https://bored-api.appbrewery.com/"
+    ],
+    "icons": {
+        "16": "/public/L2Y48.png",
+        "32": "/public/L2Y48.png",
+        "48": "/public/L2Y48.png",
+        "128": "/public/L2Y128.png"
+    }
+
+}
