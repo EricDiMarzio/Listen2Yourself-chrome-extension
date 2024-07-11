@@ -119,6 +119,7 @@ const weatherData = fetch(URL)
         const body = document.querySelector('body');
         if (body.querySelector('#BACKDROP') != null)
           body.removeChild(body.querySelector('#BACKDROP'));
+        if (document.querySelector('#contenteditable-root').innerText === "") body.removeChild(body.querySelector('#BACKDROP'));
         const backdrop = document.createElement('div');
         backdrop.setAttribute('id', 'BACKDROP');
         backdrop.style['min-height'] = '200px';
