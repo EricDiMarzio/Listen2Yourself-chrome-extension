@@ -10,11 +10,11 @@
 //base url
 //location values
 //aqi thing is a no
-const options = {
-  enableHighAccuracy: true,
-  timeout: 1000,
-  maximumAge: 0,
-};
+// const options = {
+//   enableHighAccuracy: true,
+//   timeout: 1000,
+//   maximumAge: 0,
+// };
 
 // let locationCords;
 // navigator.geolocation.getCurrentPosition(successCallback, error, options); //calling function to get location
@@ -115,7 +115,7 @@ const weatherData = fetch(URL)
     document
       .querySelector('#contenteditable-root')
       .addEventListener('keydown', function (e) {
-        const badInputs = ['Shift', 'Backspace'];
+        const badInputs = ['Shift', 'Backspace', 'ArrowUp', 'ArrowDown', 'ArrowRight', 'ArrowLeft', 'Meta', 'CapsLock', 'Tab', 'Control', 'Alt'];
         const body = document.querySelector('body');
         if (body.querySelector('#BACKDROP') != null)
           body.removeChild(body.querySelector('#BACKDROP'));
