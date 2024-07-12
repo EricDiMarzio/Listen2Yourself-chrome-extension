@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function (e) {
     chrome.extension.getBackgroundPage().chrome.tabs.executeScript(null, {file: 'payload.js'})
 })
